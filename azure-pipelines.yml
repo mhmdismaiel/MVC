@@ -27,3 +27,7 @@ steps:
   inputs:
     targetPath: '$(Pipeline.Workspace)'
     publishLocation: 'pipeline'
+    - task: PublishPipelineArtifact@1
+      inputs:
+        targetPath: '$(Pipeline.Workspace)'
+        publishLocation: 'pipeline'
